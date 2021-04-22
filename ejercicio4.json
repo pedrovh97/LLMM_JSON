@@ -1,0 +1,49 @@
+{
+	"Protagonista" : [
+		{
+			"Nombre" : "Homer",
+			"Serie" : "Los Simpson",
+			"Episodio" : [
+				{
+					"Título" : "Homer en el espacio",
+					"id" : 120
+				},
+				{
+					"Título" : "Homer barman",
+					"id" : 245
+				}
+			],
+			"imagen" : "https://www.grupoblc.com/wp-content/uploads/2013/10/images_curiosita_homer.jpg"
+		},
+		{
+			"Nombre" : "Bart",
+			"Serie" : "Los Simpson",
+			"Episodio" : [
+				{
+					"Título" : "Bart en suspenso",
+					"id" : 60
+				},
+				{
+					"Título" : "Por qué es el mejor",
+					"id" : 299
+				}
+			],
+			"imagen" : "https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.ebay.es%2Fitm%2FThe-Simpsons-Bart-Simpson-Cartoon-Character-Embroidered-Patch-Iron-On-1-7-x3-7-%2F163870423729&psig=AOvVaw0Nprwpxc4InfdgLj7xvbUK&ust=1618313350647000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCR85XN-O8CFQAAAAAdAAAAABAO"
+		},
+		{
+			"Nombre" : "Lisa",
+			"Serie" : "Los Simpson",
+			"Episodio" : [
+				{
+					"Título" : "Nueva vida",
+					"id" : 27
+				},
+				{
+					"Título" : "Lisa en problemas",
+					"id" : 201
+				}
+			],
+			"imagen" : "http://assets.stickpng.com/images/5a0c40b85a997e1c2cea116e.png"
+		}
+	]
+}

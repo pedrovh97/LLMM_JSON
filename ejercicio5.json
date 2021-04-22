@@ -1,0 +1,15 @@
+{
+		
+	"Ciudad" : "Almendralejo",
+	"Tiempo" : [
+		{
+			"dia" : 12, 
+			"temperatura" : 18,
+			"viento" : "Flojo",
+			"estado" : {
+				"Nombre" : "Soleado", 
+				"Icono" : "☀"
+			}
+		}
+	]
+}
