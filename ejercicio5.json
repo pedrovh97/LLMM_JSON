@@ -44,17 +44,6 @@
 				"nombre" : "Tormenta", 
 				"icono" : "./imagenes/tormenta.png"
 				}
-		},
-		{
-			"dia" : 15, 
-			"temperatura" : 14,
-			"viento" : 40,
-			"humedad": 80,
-			"estado" :
-				{
-				"nombre" : "Tormenta", 
-				"icono" : "./imagenes/tormenta.png"
-				}
 		}
 	]
 }
