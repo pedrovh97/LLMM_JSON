@@ -36,13 +36,13 @@
 		},
 		{
 			"dia" : 15, 
-			"temperatura" : 19,
-			"viento" : 8,
-			"humedad": 36,
+			"temperatura" : 14,
+			"viento" : 40,
+			"humedad": 80,
 			"estado" :
 				{
-				"nombre" : "Soleado", 
-				"icono" : "./imagenes/sol.png"
+				"nombre" : "Tormenta", 
+				"icono" : "./imagenes/tormenta.png"
 				}
 		}
 	]
