@@ -4,8 +4,8 @@
 		{
 			"dia" : 12, 
 			"temperatura" : 18,
-			"viento" : "9",
-			"humedad": "30",
+			"viento" : 9,
+			"humedad": 30,
 			"estado" :
 				{
 				"nombre" : "Soleado", 
@@ -15,8 +15,8 @@
 		{
 			"dia" : 13, 
 			"temperatura" : 16,
-			"viento" : "15",
-			"humedad": "40",
+			"viento" : 15,
+			"humedad": 40,
 			"estado" :
 				{
 				"nombre" : "Nubes", 
@@ -26,8 +26,8 @@
 		{
 			"dia" : 14, 
 			"temperatura" : 12,
-			"viento" : "5",
-			"humedad": "70",
+			"viento" : 5,
+			"humedad": 70,
 			"estado" :
 				{
 				"nombre" : "Lluvias", 
@@ -37,8 +37,8 @@
 		{
 			"dia" : 15, 
 			"temperatura" : 19,
-			"viento" : "8",
-			"humedad": "36",
+			"viento" : 8,
+			"humedad": 36,
 			"estado" :
 				{
 				"nombre" : "Soleado", 
