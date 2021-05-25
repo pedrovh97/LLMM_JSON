@@ -4,6 +4,7 @@ let url3 = 'https://covid-api.mmediagroup.fr/v1/cases?country=Spain';
 
 
 const selectCategorias = document.getElementById('categorias');
+const contenedorDatosExtremadura = document.getElementById("contenedor-datos-extremadura");
 const contagiados = document.getElementById("contagiados");
 const altas = document.getElementById("altas");
 const fallecidos = document.getElementById("fallecidos");
@@ -21,32 +22,41 @@ async function obtenerJSON(url){
 }
 
 function recargarListadatos(datos){
-	
-	const datoElement = document.getElementById("categorias");
-	option = document.createElement('option');
-	option.text = `Contagiados: ${datos.Extremadura.confirmed}`;
-	option.value= "hh";
-	datoElement.appendChild(option);
-	option2 = document.createElement('option');
-	option2.text = `Altas: ${datos.Extremadura.recovered}`;
-	datoElement.appendChild(option2);
-	option3 = document.createElement('option');
-	option3.text = `Fallecidos: ${datos.Extremadura.deaths}`;
-	datoElement.appendChild(option3);
 
+	obtenerJSON(url3).then(json => {
+
+		const datoElement = document.createElement("div");
+		datoElement.classList.add("contenedor-datos");
+    datoElement.innerHTML = `
+      <h2 class="contagiados">Contagiados: ${json.Extremadura.confirmed}</h2>
+      <h2 class="altas">Altas: ${json.Extremadura.recovered}</h2>
+      <h2 class="fallecidos">Fallecidos: ${json.Extremadura.deaths}</h2>
+    `;
+	});
 }
 
 obtenerJSON(url3).then(json => { 
 
-	for(var i=0; i<json.Extremadura.length; i++){
+	const selectCategorias = document.getElementById("categorias");
 
-		var valor = json.Extremadura[i].confirmed;
+		var valor = `Contagiados: ` + json.Extremadura.confirmed;
 		var opcion = document.createElement('option');
 		opcion.appendChild( document.createTextNode(valor) );
 		opcion.value = valor;
 		selectCategorias.appendChild(opcion);
 
-	}
+		var valor = `Altas: ` + json.Extremadura.recovered;
+		var opcion2 = document.createElement('option');
+		opcion2.appendChild( document.createTextNode(valor) );
+		opcion2.value = valor;
+		selectCategorias.appendChild(opcion2);
+
+		var valor = `Fallecidos: ` + json.Extremadura.deaths;
+		var opcion3 = document.createElement('option');
+		opcion3.appendChild( document.createTextNode(valor) );
+		opcion3.value = valor;
+		selectCategorias.appendChild(opcion3);
+
 
 	filtrarPorCategoria();
 
@@ -64,14 +74,13 @@ function filtrarPorCategoria(){
 
 obtenerJSON(url3).then(json => {
 
-		contagiados.innerText = "contagiados: " + json.Extremadura.confirmed;
+		contagiados.innerText = "Contagiados: " + json.Extremadura.confirmed;
 		altas.innerText ="Altas: " + json.Extremadura.recovered;
 		fallecidos.innerText ="Fallecidos: " + json.Extremadura.deaths;
 		fechaActualizacion.innerText = json.Extremadura.updated;
 	})
 
 	obtenerJSONpaís();
-
 
 function obtenerJSONpaís(){
 	const pais = ['Spain', 'France', 'Portugal', 'US', 'China', 'Italy'];
