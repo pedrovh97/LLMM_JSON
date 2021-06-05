@@ -1,4 +1,4 @@
-let url = 'https://raw.githubusercontent.com/pedrovh97/LLMM_JSON/main/ejercicio5.json';
+let url = './ejercicio5.json';
 
 const imgDiaActual = document.getElementById("img-dia-actual");
 const temperaturaDiaActual = document.getElementById("temperatura-dia-actual");
